@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame - Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">FRAME<span>.</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <p class="subtitle">VISUAL STORIES · CREATIVE COLLECTION</p>
+        <h1>Capturing moments,<br>one frame at a time.</h1>
+        <p class="hero-description">
+            Explore a collection of beautiful photographs from around the world.
+        </p>
+        <a href="#gallery" class="explore-btn">Explore Gallery ↓</a>
+    </section>
+
+    <!-- Gallery Section -->
+    <main id="gallery" class="gallery-section">
+        <div class="gallery-heading">
+            <div>
+                <p class="subtitle">OUR COLLECTION</p>
+                <h2>Discover the Gallery</h2>
+            </div>
+            <p class="gallery-count" id="gallery-count">0 photographs</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="nature">Nature</button>
+            <button class="filter-btn" data-category="architecture">Architecture</button>
+            <button class="filter-btn" data-category="travel">Travel</button>
+        </div>
+
+        <!-- Images will be added by JavaScript -->
+        <div class="gallery-grid" id="gallery-grid"></div>
+    </main>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <p class="subtitle">ABOUT FRAME</p>
+        <h2>Every picture tells<br>a different story.</h2>
+        <p>
+            Frame is a curated collection of visual moments, celebrating nature,
+            architecture, and the beauty of travelling around the world.
+        </p>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="close-lightbox" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" id="prev-image" aria-label="Previous image">&#10094;</button>
+
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-image">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-category"></p>
+            </div>
+        </div>
+
+        <button class="lightbox-next" id="next-image" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>FRAME. &copy; 2026 | Designed with creativity.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
